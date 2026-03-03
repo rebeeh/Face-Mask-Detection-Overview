@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <!-- Background circle with gradient -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+  <rect width="32" height="32" rx="8" fill="url(#bg)"/>
+  <!-- Shield icon (simplified) -->
+  <path d="M16 5 L26 9 L26 17 C26 22 21 26 16 28 C11 26 6 22 6 17 L6 9 Z"
+        fill="white" fill-opacity="0.95"/>
+  <!-- Checkmark inside shield -->
+  <path d="M12 16 L15 19 L21 13"
+        stroke="#10b981" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

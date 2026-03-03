@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Safety Vision — Page Not Found</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--
+    GitHub Pages SPA redirect trick.
+    When GitHub Pages 404s on a path (e.g. /Face-Mask-Detection-Overview/anything),
+    it serves this file. The script below encodes the full URL into the query
+    string and redirects to index.html, which the SPA router can then decode.
+    Source: https://github.com/rafgraph/spa-github-pages
+  -->
+    <script>
+        var l = window.location;
+        l.replace(
+            l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+            l.pathname.split('/').slice(0, -1).join('/') + '/?p=/' +
+            l.pathname.slice(1).replace(/&/g, '~and~') +
+            (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+            l.hash
+        );
+    </script>
+</head>
+
+<body>
+    <noscript>
+        <p>This page requires JavaScript to run. Please enable JavaScript in your browser.</p>
+    </noscript>
+</body>
+
+</html>
